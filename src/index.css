@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'ShlomoSemiStam',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -10,4 +10,253 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@font-face {
+  font-family:'ShlomoSemiStam';
+  src: local('ShlomoSemiStam'),
+    url('./fonts/ShlomoSemiStam.ttf') format('truetype');
+}
+
+.TopLevel{
+  padding: 2%;
+}
+
+.menu {
+   font-family: sans-serif;
+   font-size: 1.2em;
+   display: inline-block;
+   border:1px solid maroon;
+   width:20%;
+   margin:1%;
+   margin-top:4%;
+   padding:1%;
+   max-width: 9%;
+   text-align: center;
+}
+
+.HomeLeft {
+  font-size: .8em;
+  font-weight: normal;
+  color:maroon;
+  padding:3%;
+  vertical-align: top;
+}
+
+.HomeRight {
+  font-size: 1.2em;
+  font-weight: normal;
+  color:blue;
+  padding:3%;
+}
+
+.floatRight{
+    font-size: 1.4em;
+    float:right;
+    display: inline;
+}
+
+.PickLine {
+  max-width: 70%;
+  font-size:1,1em;
+  font-family: serif;
+  color:maroon;
+  width:100%;
+}
+
+.PicturePick {
+  min-width: 464px;
+  min-height: 613px;
+  width:365px;
+  height:auto;
+  opacity:.8;
+  display: inline-block;
+}
+
+.Picture {
+  width:365px;
+  height:auto;
+  opacity:.8;
+  display: inline-block;
+  float:left;
+}
+
+
+/* Beginning Pasukim Form fields */
+
+.formTable {
+  margin:5%;
+  margin-top:0%;
+  border:none;
+  color:white;
+  background-color: maroon;
+  border:4px solid black;
+  padding:8px;
+  display:inline-block;
+}
+
+.formInput{
+  width:30%;
+  color:white;
+  background-color: maroon;
+}
+
+/* pesukim */
+.PesukimSideTable {
+  vertical-align: top;
+}
+
+.heChapter {
+  border:4px solid maroon;
+  margin:2%;
+  margin-top:0%;
+  background-color: tan;
+  width: 90%;
+  align:right;
+  vertical-align: top;
+  float:right;
+}
+
+.pasukim {
+  text-align: right;
+  font-size: 1.3em;
+  list-style: none;
+  margin:5%;
+  font-family:ShlomoSemiStam;
+}
+
+.pasukimred {
+  text-align: right;
+  font-size: 1.3em;
+  list-style: none;
+  margin:5%;
+  color:red;
+  font-family:ShlomoSemiStam;
+}
+
+/* perush side */
+.PerushHe {
+  text-align: right;
+  font-size: 1em;
+  list-style: none;
+  margin:5%;
+  color:black;
+  font-family:sans-serif;
+}
+
+.PerushSideTable {
+  text-align: right;
+  max-width:100%;
+  vertical-align: top;
+  /* border:2px solid red; */
+}
+
+.PesukimSideTable {
+  min-width:70%;
+}
+
+.Perushim {
+  /* border:2px solid red; */
+}
+
+.PerushName {
+  text-align: left;
+  max-width:100%;
+  color:maroon;
+  font-weight: bold;
+  text-decoration-style:solid;
+  text-decoration-line:underline;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.Author {
+  color:maroon;
+  font-size:.8em;
+}
+
+.PerushNote {
+  color:maroon;
+  font-size:1em;
+  font-style:italic;
+  text-align: left;
+}
+
+/* adding articles */
+
+
+.AuthorName {
+  width:20%;
+  color:maroon;
+  padding:1%;
+  font-size: 1.2em;
+}
+
+.ArticleName {
+  color:maroon;
+  font-size: 1.0em;
+}
+
+.ArticleNameblue {
+  color:blue;
+  font-size: 1.0em;
+}
+
+.ArticleNamered {
+  color:red;
+  font-size: 1.0em;
+}
+
+.ArticlePage {
+  margin: 5%;
+}
+
+.ArticleEntry {
+  max-width: 80%;
+  color:maroon;
+  /* padding:1%; */
+  font-size: 1.1em;
+  border:1px dotted maroon;
+}
+
+.PubName, .AuthorName{
+  display:none;
+}
+
+.PubBox {
+  width:85%;
+  margin:10%;
+  border:2px solid maroon;
+  font-size:.8em;
+}
+
+.hover {
+  position:absolute;
+  border:2px solid yellow;
+  font-family: serif;
+  font-size:1em;
+  font-weight: normal;
+  top:10%;
+  left:60%;
+}
+
+.showText {
+  width:95%;
+  font-size:1em;
+  font-family: cursive;
+  font-weight: normal;
+  background-color: tan;
+  border:4px solid maroon;
+  padding:1%;
+}
+
+.Wrapper{
+  width:80%;
+  font-size:2em;
+  font-family: serif;
+  margin:5%;
+  padding:2%;
+  padding-top:5%;
+  color:maroon;
+  vertical-align:top;
 }
