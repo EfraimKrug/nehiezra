@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/nehiezra/static/css/main.7e3a98ef.chunk.css",
+    "main.js": "/nehiezra/static/js/main.42ca64f9.chunk.js",
+    "main.js.map": "/nehiezra/static/js/main.42ca64f9.chunk.js.map",
+    "runtime-main.js": "/nehiezra/static/js/runtime-main.a398892f.js",
+    "runtime-main.js.map": "/nehiezra/static/js/runtime-main.a398892f.js.map",
+    "static/js/2.84242264.chunk.js": "/nehiezra/static/js/2.84242264.chunk.js",
+    "static/js/2.84242264.chunk.js.map": "/nehiezra/static/js/2.84242264.chunk.js.map",
+    "index.html": "/nehiezra/index.html",
+    "precache-manifest.66a34c060212af94f4f1d900d208246f.js": "/nehiezra/precache-manifest.66a34c060212af94f4f1d900d208246f.js",
+    "service-worker.js": "/nehiezra/service-worker.js",
+    "static/css/main.7e3a98ef.chunk.css.map": "/nehiezra/static/css/main.7e3a98ef.chunk.css.map",
+    "static/js/2.84242264.chunk.js.LICENSE.txt": "/nehiezra/static/js/2.84242264.chunk.js.LICENSE.txt",
+    "static/media/BeRonYahad.jpeg": "/nehiezra/static/media/BeRonYahad.ab4de693.jpeg",
+    "static/media/LogoKorenComingSoon.jpg": "/nehiezra/static/media/LogoKorenComingSoon.3bd259c3.jpg",
+    "static/media/Nehemia_Polen_In_Search_of_the_Broken_Se.pdf": "/nehiezra/static/media/Nehemia_Polen_In_Search_of_the_Broken_Se.9a48f816.pdf",
+    "static/media/index.css": "/nehiezra/static/media/ShlomoSemiStam.83800028.ttf",
+    "static/media/TheHolyFire.jpg": "/nehiezra/static/media/TheHolyFire.06c0e18d.jpg",
+    "static/media/TheRebbesDaughter.jpg": "/nehiezra/static/media/TheRebbesDaughter.487796cd.jpg",
+    "static/media/TiberiasWithLove.jpeg": "/nehiezra/static/media/TiberiasWithLove.c87f8f57.jpeg",
+    "static/media/logo.svg": "/nehiezra/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a398892f.js",
+    "static/js/2.84242264.chunk.js",
+    "static/css/main.7e3a98ef.chunk.css",
+    "static/js/main.42ca64f9.chunk.js"
+  ]
+}
