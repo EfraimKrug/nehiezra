@@ -1,12 +1,13 @@
 import React from 'react';
 import Picture from './Picture.js';
+import RebNehemiaSmall from './images/RebNehemiaSmall.jpeg';
 
 class HomeLeft extends React.Component {
   render(){
     return (<td className="HomeLeft">
         <tr>
         <td>
-        <Picture src="./images/RebNehemiaSmall.jpeg"/>
+        <Picture src={RebNehemiaSmall}/>
         </td>
         <td>
         <span className="floatRight">
