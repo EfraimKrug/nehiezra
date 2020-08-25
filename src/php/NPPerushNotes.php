@@ -22,13 +22,16 @@ class PerushNotes{
         $this->connection = $connection;
     }
 
+
     //C
-    public function create($author, $title, $picture){
+    public function create($Author,$Sefer,$Chapter,$Verse,$Note,$OtherAbout,$OtherCitation,$OtherSefer){
       $insert = "INSERT INTO  " . $this->table_name . "( `Author`, `Sefer`, `Chapter`, `Verse`, `Note`, `OtherAbout`, `OtherCitation`, `OtherSefer` ) VALUES ( '" . $Author . "','" . $Sefer . "','" . $Chapter . "','" . $Verse . "','" . $Note . "','" . $OtherAbout . "','" . $OtherCitation . "','" . $OtherSefer . "')";
 
       $readyConn = $this->connection->prepare($insert);
 
       $readyConn->execute();
+
+      // return $readyConn;
     }
     //R
     public function read(){

@@ -1,0 +1,1 @@
+cat help/a junk.txt help/z > help/data.js
