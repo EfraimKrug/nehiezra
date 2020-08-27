@@ -1,0 +1,8 @@
+cd ~/NTT/Explore/node3/nehiezra/nodejs
+echo "[" > a
+echo "]" > b
+cat a perushCollection.txt b > dataFile.json
+# node putPerushNotes.js
+# rm a
+# rm b
+# rm perushCollection.txt

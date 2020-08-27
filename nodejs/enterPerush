@@ -1,0 +1,4 @@
+cd ~/NTT/Explore/node3/nehiezra/nodejs
+cat perush.txt >> perushCollection.txt
+rm perush.txt
+node getPerush.js

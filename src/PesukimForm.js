@@ -44,7 +44,7 @@ class PesukimForm extends React.Component {
           <table className="formTable">
           <tbody>
           <tr><td>Sefer</td>
-          <td><select defaultValue={this.props.sefer} onChange={this.props.handleSeferChange}>
+          <td><select defaultValue={this.props.sefer} onChange={this.props.handleSeferChange} tabindex='0'>
                 <option value="Bereishit">Bereishit</option>
                 <option value="Shemot">Shemot</option>
                 <option value="Vayikra">Vayikra</option>
@@ -91,18 +91,18 @@ class PesukimForm extends React.Component {
           </td>
           </tr>
           <tr><td>Chapter</td>
-          <td><input type="text" className="formInput" value={this.props.chapter} onChange={this.props.handleChapterChange}/>
+          <td><input type="text" className="formInput" value={this.props.chapter} onChange={this.props.handleChapterChange} tabindex='1' />
           </td>
           <td>
           <button type="button" className="NextButton" onClick={this.nextVerse}>Next</button>
           </td>
           </tr>
           <tr><td>Verse</td>
-          <td><input type="text" id="verseInput" className="formInput" value={this.props.verse} onChange={this.props.versechange}/>
+          <td><input type="text" id="verseInput" className="formInput" value={this.props.verse} onChange={this.props.versechange} tabindex='2'/>
           </td>
           </tr>
           <tr><td></td><td>
-            <input type="submit" value="Submit" />
+            <input type="submit" value="Submit" tabindex='3'/>
             </td></tr>
             </tbody>
             </table>

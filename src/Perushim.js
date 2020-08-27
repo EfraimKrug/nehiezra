@@ -8,6 +8,7 @@ class Perushim extends React.Component {
     render()
     {
         // console.log(this.props.perushim);
+        let lastCommentary = "";
         return (<table><tbody>
                 {this.props.perushim.map(function(perush,index){
                         let line = perush['he'].toString();
@@ -20,8 +21,11 @@ class Perushim extends React.Component {
                             flag=true;
                           }
                         }
-                        if(flag)
-                          return (<tr key={index}><td><PerushName perushname={thisCommentary}/><span className="PerushHe">{line.trim().substring(0,line.length-1)}</span></td></tr>)
+                        if(flag){
+                          let holdCommentary = lastCommentary;
+                          lastCommentary = thisCommentary;
+                          return (<tr key={index}><td><PerushName perushname={thisCommentary} lastperushname={holdCommentary}/><span className="PerushHe">{line.trim().substring(0,line.length-1)}</span></td></tr>)
+                        }
                         else return null
                         })}
                 </tbody></table>);

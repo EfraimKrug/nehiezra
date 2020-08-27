@@ -8,18 +8,18 @@ const rl = readline.createInterface({
 
 var author = "Nehemia Polen";
 var sefer = "Vayikra";
-var chapter = 4;
-var verse = 1;
+var chapter = "5";
+var verse = "1";
 var note = "";
 var otherabout = "";
-var othercitation = "Bereishit 1:1";
-var othersefer = "Pri Aretz";
+var othercitation = "";
+var othersefer = "";
 
 const question8 = () => {
   return new Promise((resolve, reject) => {
     rl.question('othersefer: (' + othersefer + '): ', (otherseferIn) => {
-      if(otherseferIn) othersefer = otherseferIn;
-      console.log(`Thank you for your valuable feedback: ${othersefer}`);
+      if(otherseferIn) othersefer = otherseferIn.replace(/\"/g, "'");
+      console.log(`Thank you: ${othersefer}`);
       resolve()
     })
   })
@@ -28,8 +28,8 @@ const question8 = () => {
 const question7 = () => {
   return new Promise((resolve, reject) => {
     rl.question('othercitation: (' + othercitation + '): ', (othercitationIn) => {
-      if(othercitationIn) othercitation = othercitationIn;
-      console.log(`Thank you for your valuable feedback: ${othercitation}`);
+      if(othercitationIn) othercitation = othercitationIn.replace(/\"/g, "'");;
+      console.log(`Thank you: ${othercitation}`);
       resolve()
     })
   })
@@ -38,8 +38,8 @@ const question7 = () => {
 const question6 = () => {
   return new Promise((resolve, reject) => {
     rl.question('otherabout: (' + otherabout + '): ', (otheraboutIn) => {
-      if(otheraboutIn) otherabout = otheraboutIn;
-      console.log(`Thank you for your valuable feedback: ${otherabout}`);
+      if(otheraboutIn) otherabout = otheraboutIn.replace(/\"/g, "'");;
+      console.log(`Thank you: ${otherabout}`);
       resolve()
     })
   })
@@ -48,8 +48,8 @@ const question6 = () => {
 const question5 = () => {
   return new Promise((resolve, reject) => {
     rl.question('note: (' + note + '): ', (noteIn) => {
-      if(noteIn) note = noteIn;
-      console.log(`Thank you for your valuable feedback: ${note}`);
+      if(noteIn) note = noteIn.replace(/\"/g, "'");;
+      console.log(`Thank you: ${note}`);
       resolve()
     })
   })
@@ -58,8 +58,8 @@ const question5 = () => {
 const question4 = () => {
   return new Promise((resolve, reject) => {
     rl.question('verse: (' + verse + '): ', (verseIn) => {
-      if(verseIn) verse = verseIn;
-      console.log(`Thank you for your valuable feedback: ${verse}`);
+      if(verseIn) verse = verseIn.replace(/\"/g, "'");;
+      console.log(`Thank you: ${verse}`);
       resolve()
     })
   })
@@ -68,8 +68,8 @@ const question4 = () => {
 const question3 = () => {
   return new Promise((resolve, reject) => {
     rl.question('chapter: (' + chapter + '): ', (chapterIn) => {
-      if(chapterIn) chapter = chapterIn;
-      console.log(`Thank you for your valuable feedback: ${chapter}`);
+      if(chapterIn) chapter = chapterIn.replace(/\"/g, "'");;
+      console.log(`Thank you: ${chapter}`);
       resolve()
     })
   })
@@ -78,8 +78,8 @@ const question3 = () => {
 const question2 = () => {
   return new Promise((resolve, reject) => {
     rl.question('sefer: (' + sefer + '): ', (seferIn) => {
-      if(seferIn) sefer = seferIn;
-      console.log(`Thank you for your valuable feedback: ${sefer}`);
+      if(seferIn) sefer = seferIn.replace(/\"/g, "'");;
+      console.log(`Thank you: ${sefer}`);
       resolve()
     })
   })
@@ -88,8 +88,8 @@ const question2 = () => {
 const question1 = () => {
   return new Promise((resolve, reject) => {
     rl.question('Author: (' + author + '): ', (authorIn) => {
-      if(authorIn) author = authorIn;
-      console.log(`Thank you for your valuable feedback: ${author}`);
+      if(authorIn) author = authorIn.replace(/\"/g, "'");;
+      console.log(`Thank you: ${author}`);
       resolve()
     })
   })
@@ -108,7 +108,7 @@ function appendLine(){
     othersefer : othersefer
   }
 
-  fs.appendFile('junk.txt', JSON.stringify(obj)+",", function (err) {
+  fs.appendFile('perush.txt', JSON.stringify(obj)+",", function (err) {
     if (err) throw err;
     console.log('Saved!');
   });

@@ -4,7 +4,11 @@ class PerushName extends React.Component {
     // console.log(this);
     render()
     {
-        return (<span className="PerushName">{this.props.perushname}</span>);
+      // console.log(this.props);
+        if(this.props.perushname !== this.props.lastperushname){
+          return (<span className="PerushName">{this.props.perushname}</span>);
+        }
+        return (<span className="PerushName"><hr/></span>);
     }
 }
 

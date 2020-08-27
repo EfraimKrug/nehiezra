@@ -17,6 +17,7 @@ class PerushNotes{
     public $OtherAbout;
     public $OtherCitation;
     public $OtherSefer;
+    public $OtherText;
 
     public function __construct($connection){
         $this->connection = $connection;
@@ -24,8 +25,8 @@ class PerushNotes{
 
 
     //C
-    public function create($Author,$Sefer,$Chapter,$Verse,$Note,$OtherAbout,$OtherCitation,$OtherSefer){
-      $insert = "INSERT INTO  " . $this->table_name . "( `Author`, `Sefer`, `Chapter`, `Verse`, `Note`, `OtherAbout`, `OtherCitation`, `OtherSefer` ) VALUES ( '" . $Author . "','" . $Sefer . "','" . $Chapter . "','" . $Verse . "','" . $Note . "','" . $OtherAbout . "','" . $OtherCitation . "','" . $OtherSefer . "')";
+    public function create($Author,$Sefer,$Chapter,$Verse,$Note,$OtherAbout,$OtherCitation,$OtherSefer,$OtherText){
+      $insert = "INSERT INTO  " . $this->table_name . "( `Author`, `Sefer`, `Chapter`, `Verse`, `Note`, `OtherAbout`, `OtherCitation`, `OtherSefer`, `OtherText` ) VALUES ( \"" . $Author . "\",\"" . $Sefer . "\",\"" . $Chapter . "\",\"" . $Verse . "\",\"" . $Note . "\",\"" . $OtherAbout . "\",\"" . $OtherCitation . "\",\"" . $OtherSefer .  "\",\"" . $OtherText . "\")";
 
       $readyConn = $this->connection->prepare($insert);
 
@@ -35,7 +36,7 @@ class PerushNotes{
     }
     //R
     public function read(){
-        $query = "SELECT Author, Sefer, Chapter, Verse, Note, OtherAbout, OtherCitation, OtherSefer FROM " . $this->table_name;
+        $query = "SELECT Author, Sefer, Chapter, Verse, Note, OtherAbout, OtherCitation, OtherSefer, OtherText FROM " . $this->table_name;
 
         $readyConn = $this->connection->prepare($query);
 
@@ -48,5 +49,4 @@ class PerushNotes{
     //D
     public function delete(){}
 }
-
 ?>

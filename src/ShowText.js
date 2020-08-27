@@ -17,7 +17,7 @@ class ShowText extends React.Component {
   constructor(props){
     super(props);
     this.hideText = this.hideText.bind(this);
-    console.log(this.props.file);
+    // console.log(this.props.file);
     }
 
     getText(fileIn){

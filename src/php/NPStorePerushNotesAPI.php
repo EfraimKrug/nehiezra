@@ -17,8 +17,9 @@ $note = $_REQUEST['note'];
 $otherabout = $_REQUEST['otherabout'];
 $othercitation = $_REQUEST['othercitation'];
 $othersefer = $_REQUEST['othersefer'];
+$othertext = $_REQUEST['othertext'];
 
 // echo json_encode($_REQUEST);
-$stmt = $PerushNotes->create($author,$sefer,$chapter,$verse,$note,$otherabout,$othercitation,$othersefer);
-print_r($_REQUEST);
+$stmt = $PerushNotes->create($author,$sefer,$chapter,$verse,$note,$otherabout,$othercitation,$othersefer,$othertext);
+// print_r($_REQUEST);
 ?>
