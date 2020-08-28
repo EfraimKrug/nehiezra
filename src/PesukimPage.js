@@ -29,30 +29,26 @@ class PesukimPage extends React.Component {
 
   render(){
       return (
-          <div>
-            <table><tbody>
-            <tr>
-            <td className="PerushSideTable">
-            <PesukimForm
-                  handleSeferChange={this.props.handleSeferChange}
-                  handleChapterChange={this.props.handleChapterChange}
-                  handleVerseChange={this.props.handleVerseChange}
-                  versechange={this.handleVerseChange}
-                  loadPesukim={this.props.loadPesukim}
-                  nextPasuk={this.props.nextPasuk}
-                  count={this.props.pesukim.length}
-                  sefer={this.props.sefer}
-                  chapter={this.props.chapter}
-                  verse={this.props.verse}
-              />
-            <PerushNotes perushNotes={this.props.perushNotes} />
-            <Perushim perushim={this.props.perushim} />
-            </td>
-            <td className="PesukimSideTable">
-            <PesukimMikra pesukim={this.props.pesukim} verse={this.props.verse}/>
-            </td>
-            </tr>
-            </tbody></table>
+          <div className="PasukPage">
+            <div className="PerushSideTable">
+                    <PesukimForm
+                          handleSeferChange={this.props.handleSeferChange}
+                          handleChapterChange={this.props.handleChapterChange}
+                          handleVerseChange={this.props.handleVerseChange}
+                          versechange={this.handleVerseChange}
+                          loadPesukim={this.props.loadPesukim}
+                          nextPasuk={this.props.nextPasuk}
+                          count={this.props.pesukim.length}
+                          sefer={this.props.sefer}
+                          chapter={this.props.chapter}
+                          verse={this.props.verse}
+                      />
+                    <PerushNotes perushNotes={this.props.perushNotes} />
+                    <Perushim perushim={this.props.perushim} />
+                <div className="PesukimSideTable">
+                    <PesukimMikra pesukim={this.props.pesukim} verse={this.props.verse}/>
+                </div>
+            </div>
           </div>
         )
       }

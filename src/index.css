@@ -87,13 +87,13 @@ code {
 
 .formTable {
   margin:5%;
-  margin-top:0%;
+  margin-top:5%;
   border:none;
   color:white;
   background-color: maroon;
   border:4px solid black;
   padding:8px;
-  display:inline-block;
+  float:left;
 }
 
 .formInput{
@@ -103,8 +103,12 @@ code {
 }
 
 /* pesukim */
-.PesukimSideTable {
-  vertical-align: top;
+.PasukPage {
+    position: absolute;
+    top:25%;
+    left:2%;
+    width:98%;
+    /* border:5px solid red; */
 }
 
 .heChapter {
@@ -112,7 +116,7 @@ code {
   margin:2%;
   margin-top:0%;
   background-color: tan;
-  width: 90%;
+  width: 100%;
   align:right;
   vertical-align: top;
   float:right;
@@ -140,20 +144,22 @@ code {
   text-align: right;
   font-size: 1em;
   list-style: none;
-  margin:5%;
+  margin:15%;
   color:black;
   font-family:sans-serif;
 }
 
 .PerushSideTable {
+  /* float:left; */
   text-align: right;
-  max-width:100%;
+  max-width:98%;
   vertical-align: top;
-  /* border:2px solid red; */
 }
 
 .PesukimSideTable {
-  min-width:70%;
+  float:right;
+  width:90%;
+  vertical-align: top;
 }
 
 .Perushim {
@@ -161,19 +167,35 @@ code {
 }
 
 .PerushName {
+  list-style: none;
   text-align: left;
-  max-width:100%;
+  width:92%;
   color:maroon;
   font-weight: bold;
   text-decoration-style:solid;
   text-decoration-line:underline;
-  display: block;
   margin-bottom: 2px;
+}
+
+.PerushNote {
+    margin:2%;
+    padding:2%;
+    width: 26%;
+    float:left;
 }
 
 .Author {
   color:maroon;
-  font-size:.8em;
+  font-size:1em;
+  font-style:oblique;
+  text-align: left;
+}
+
+.PerushAuthor {
+  color:maroon;
+  font-size:1em;
+  font-style:oblique;
+  text-align: left;
 }
 
 .PerushNote {
@@ -181,6 +203,26 @@ code {
   font-size:1em;
   font-style:italic;
   text-align: left;
+}
+
+.CommentaryList {
+  list-style: none;
+  display:inline;
+  float:left;
+}
+
+.Commentary {
+  list-style: none;
+  /* border:2px solid tan; */
+  width:90%;
+  margin:1%;
+  margin-left:0px;
+  font-size:1.4em;
+  color:maroon;
+  padding:1%;
+  padding-left:0%;
+  text-align: right;
+  float:left;
 }
 
 .Sefer {

@@ -7,10 +7,10 @@ class PerushNotes extends React.Component {
     render()
     {
         // console.log(this.props.perushNotes);
-        return (<table><tbody>
+        return (<div className="PerushNote" >
                 {this.props.perushNotes.map(function(perush,index){
-                        return (<tr key={index}><PerushAuthor author={perush.author} sefer={perush.othersefer}/><PerushNote perushnote={perush.note}/></tr>)})}
-                </tbody></table>);
+                        return (<div className="PerushNote" key={index}><PerushAuthor author={perush.author} sefer={perush.othersefer}/><PerushNote perushnote={perush.note}/></div>)})}
+                </div>);
     }
 }
 

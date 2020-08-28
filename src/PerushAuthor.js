@@ -21,9 +21,9 @@ class PerushAuthor extends React.Component {
     render()
     {
         let sefer = this.props.sefer;
-        return (<td className="Author">
+        return (<div className="PerushAuthor">
                 {this.props.author} <GetSefer sefer={this.props.sefer}/>
-                </td>);
+                </div>);
     }
 }
 

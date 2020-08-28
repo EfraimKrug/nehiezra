@@ -9,7 +9,7 @@ class Perushim extends React.Component {
     {
         // console.log(this.props.perushim);
         let lastCommentary = "";
-        return (<table><tbody>
+        return (<ul className="CommentaryList">
                 {this.props.perushim.map(function(perush,index){
                         let line = perush['he'].toString();
                         line = line.replace(/<(.+?)>/g,"");
@@ -24,11 +24,11 @@ class Perushim extends React.Component {
                         if(flag){
                           let holdCommentary = lastCommentary;
                           lastCommentary = thisCommentary;
-                          return (<tr key={index}><td><PerushName perushname={thisCommentary} lastperushname={holdCommentary}/><span className="PerushHe">{line.trim().substring(0,line.length-1)}</span></td></tr>)
+                          return (<li className="Commentary" key={index}><PerushName perushname={thisCommentary} lastperushname={holdCommentary}/><span className="PerushHe">{line.trim().substring(0,line.length-1)}</span></li>)
                         }
                         else return null
                         })}
-                </tbody></table>);
+                </ul>);
     }
 }
 

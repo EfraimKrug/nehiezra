@@ -1,4 +1,15 @@
 cd ~/NTT/Explore/node3/nehiezra/nodejs
+touch include.txt
+touch perush.txt
+cat include.txt >> perushCollection.txt
 cat perush.txt >> perushCollection.txt
-rm perush.txt
-node getPerush.js
+
+while :
+do
+  rm perush.txt
+  node getPerush.js
+  cat perush.txt >> perushCollection.txt
+  echo "CNTL-C to stop"
+  sleep 1
+done
+echo you should now run `uploadPerush`
