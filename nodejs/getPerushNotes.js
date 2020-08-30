@@ -13,11 +13,15 @@ const req = https.request(options, res => {
 
   res.on('data', d => {
     process.stdout.write(d)
-  })
+  });
+  res.on('end', () => {
+    console.log('end')
+  });
 })
 
 req.on('error', error => {
   console.error(error)
 })
 
+console.log("starting...");
 req.end()
