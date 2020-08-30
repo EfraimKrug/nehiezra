@@ -1,4 +1,4 @@
-cd ~/NTT/Explore/node3/nehiezra/nodejs
+cd ~/nehiezra/nodejs
 echo "[" > a
 echo "]" > b
 sed '$ s/.$//' perushCollection.txt > c
