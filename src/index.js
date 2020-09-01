@@ -110,6 +110,7 @@ class TopLevel extends React.Component {
           && Object.keys(this.state.perushim).length){
             // console.log(this.state.perushNotes);
             // console.log(this.state.perushim.commentary);
+            // console.log([this.state.sefer, this.state.chapter, this.state.verse, this.state.perushNotes.body.filter(perush => perush.sefer === this.state.sefer && perush.chapter == this.state.chapter && perush.verse == this.state.verse)]);
             return (<div className="TopLevel">
                 <TopMenu books={this.state.books}
                          pesukim={this.state.pesukim}
@@ -126,7 +127,7 @@ class TopLevel extends React.Component {
                          />
                 </div>);
           }
-        return null; 
+        return null;
     }
 }
 

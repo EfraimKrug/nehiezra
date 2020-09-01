@@ -18,6 +18,15 @@ code {
     url('./fonts/ShlomoSemiStam.ttf') format('truetype');
 }
 
+.bigger {
+  color:black;
+  float:left;
+  /* border:4px solid blue; */
+  width:97%;
+  padding:2%;
+}
+
+
 .TopLevel{
   padding: 2%;
 }
@@ -109,8 +118,9 @@ code {
     position: absolute;
     top:25%;
     left:2%;
-    width:98%;
-    border:5px solid red;
+    width:94%;
+    margin:3%;
+    border:1px solid maroon;
 }
 
 .PerushSideTable {
@@ -151,13 +161,22 @@ code {
 /* perush side */
 .PerushHe {
   text-align: right;
-  font-size: .8em;
-  list-style: none;
-  margin:10%;
-  margin-top: 0;
   color:black;
   font-family:sans-serif;
-  vertical-align: top;
+  font-size: .8em;
+  margin:5px;
+  /* float:left; */
+  display: block;
+}
+
+.PerushName {
+  text-align: left;
+  color:maroon;
+  font-weight: bold;
+  text-decoration-style:solid;
+  text-decoration-line:underline;
+  margin-bottom: 2px;
+  float:left;
 }
 
 .PerushSideTable {
@@ -177,33 +196,25 @@ code {
   /* border:2px solid red; */
 }
 
-.PerushName {
-  list-style: none;
-  text-align: left;
-  /* width:92%; */
-  color:maroon;
-  font-weight: bold;
-  text-decoration-style:solid;
-  text-decoration-line:underline;
-  margin-bottom: 2px;
-  display: inline-block;
-  float:left;
-  vertical-align: top;
-}
 
 .PerushNotes {
-    margin:0%;
+    width:96%;
+    /* margin:0%;
     padding:0%;
-    float:left;
-    display:none;
-    vertical-align: top;
+    float:left; */
+    /* display:none; */
+    /* vertical-align: top; */
 }
 
 .PerushNote {
     margin:2%;
     padding:2%;
-    width: 26%;
     float:left;
+    color:maroon;
+    font-size:1.2em;
+    font-style:italic;
+    text-align: left;
+    width:100%;
 }
 
 .Author {
@@ -218,25 +229,19 @@ code {
   font-size:1em;
   font-style:oblique;
   text-align: left;
-}
-
-.PerushNote {
-  color:maroon;
-  font-size:1em;
-  font-style:italic;
-  text-align: left;
+  width: 98%;
 }
 
 .CommentaryList {
-  /* display:inline-block; */
-  width:43%;
-  /* float:left; */
+  display:inline-block;
+  width:100%;
+  float:left;
   /* min-width: 30%; */
 }
 
 .Commentary {
-  list-style: none;
-  border:2px solid tan;
+  /* list-style: none; */
+  /* border:2px solid tan; */
   /* width:90%; */
   margin:1%;
   margin-left:0px;
@@ -245,8 +250,8 @@ code {
   padding:1%;
   /* padding-left:0%; */
   text-align: right;
-  float:left;
-  /* display: inline; */
+  /* float:left; */
+  display: inline;
 }
 
 .Sefer {

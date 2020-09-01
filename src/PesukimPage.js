@@ -1,6 +1,5 @@
 import React from 'react';
 import PesukimForm from './PesukimForm.js';
-import PesukimMikra from './PesukimMikra.js';
 import Perushim from './Perushim.js';
 import PerushNotes from './PerushNotes.js';
 
@@ -30,10 +29,9 @@ class PesukimPage extends React.Component {
   render(){
       let firstVerse = this.props.verse > 2 ? this.props.verse - 3 : 0;
       let lastVerse = this.props.verse > this.props.pesukim.length - 3 ? this.props.pesukim.length : this.props.verse + 2;
-      // console.log([firstVerse,lastVerse]);
+      // console.log(this.props.perushNotes);
       return (
           <div className="PasukPage">
-                    <PesukimMikra pesukim={this.props.pesukim.slice(firstVerse,lastVerse)} verse={this.props.verse} firstVerse={firstVerse}/>
                     <PesukimForm
                           handleSeferChange={this.props.handleSeferChange}
                           handleChapterChange={this.props.handleChapterChange}
@@ -47,7 +45,11 @@ class PesukimPage extends React.Component {
                           verse={this.props.verse}
                       />
                     <PerushNotes perushNotes={this.props.perushNotes} />
-                    <Perushim perushim={this.props.perushim} />
+                    <Perushim perushim={this.props.perushim}
+                              pesukim={this.props.pesukim.slice(firstVerse,lastVerse)}
+                              verse={this.props.verse}
+                              firstVerse={firstVerse}
+                    />
           </div>
         )
       }

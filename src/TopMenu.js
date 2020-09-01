@@ -14,7 +14,7 @@ import {
 
 class TopMenu extends React.Component {
   render(){
-      // console.log()
+      // console.log(this.props.perushNotes)
       return (
           <div>
               <Router>
@@ -53,7 +53,7 @@ class TopMenu extends React.Component {
                     <Route path="/articles">
                       <ArticlesPage />
                     </Route>
-                    <Route path="/pasukim"> 
+                    <Route path="/pasukim">
                       <PesukimPage  pesukim={this.props.pesukim}
                                     handleSeferChange={this.props.handleSeferChange}
                                     handleChapterChange={this.props.handleChapterChange}
