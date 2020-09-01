@@ -28,6 +28,9 @@ class PesukimPage extends React.Component {
 
 
   render(){
+      let firstVerse = this.props.verse > 2 ? this.props.verse - 3 : 0;
+      let lastVerse = this.props.verse > this.props.pesukim.length - 3 ? this.props.pesukim.length : this.props.verse + 2;
+      // console.log([firstVerse,lastVerse]);
       return (
           <div className="PasukPage">
             <div className="PerushSideTable">
