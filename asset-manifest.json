@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/nehiezra/static/css/main.a669306b.chunk.css",
-    "main.js": "/nehiezra/static/js/main.d53772da.chunk.js",
-    "main.js.map": "/nehiezra/static/js/main.d53772da.chunk.js.map",
+    "main.css": "/nehiezra/static/css/main.0149349e.chunk.css",
+    "main.js": "/nehiezra/static/js/main.1ed4955b.chunk.js",
+    "main.js.map": "/nehiezra/static/js/main.1ed4955b.chunk.js.map",
     "runtime-main.js": "/nehiezra/static/js/runtime-main.a398892f.js",
     "runtime-main.js.map": "/nehiezra/static/js/runtime-main.a398892f.js.map",
     "static/js/2.84242264.chunk.js": "/nehiezra/static/js/2.84242264.chunk.js",
     "static/js/2.84242264.chunk.js.map": "/nehiezra/static/js/2.84242264.chunk.js.map",
     "index.html": "/nehiezra/index.html",
-    "precache-manifest.55dcd58ce7c0832e7e7633d1ad176857.js": "/nehiezra/precache-manifest.55dcd58ce7c0832e7e7633d1ad176857.js",
+    "precache-manifest.63e3c5ddc5e4737f394f064f48d8824e.js": "/nehiezra/precache-manifest.63e3c5ddc5e4737f394f064f48d8824e.js",
     "service-worker.js": "/nehiezra/service-worker.js",
-    "static/css/main.a669306b.chunk.css.map": "/nehiezra/static/css/main.a669306b.chunk.css.map",
+    "static/css/main.0149349e.chunk.css.map": "/nehiezra/static/css/main.0149349e.chunk.css.map",
     "static/js/2.84242264.chunk.js.LICENSE.txt": "/nehiezra/static/js/2.84242264.chunk.js.LICENSE.txt",
     "static/media/BeRonYahad.jpeg": "/nehiezra/static/media/BeRonYahad.ab4de693.jpeg",
     "static/media/LogoKorenComingSoon.jpg": "/nehiezra/static/media/LogoKorenComingSoon.3bd259c3.jpg",
@@ -24,7 +24,7 @@
   "entrypoints": [
     "static/js/runtime-main.a398892f.js",
     "static/js/2.84242264.chunk.js",
-    "static/css/main.a669306b.chunk.css",
-    "static/js/main.d53772da.chunk.js"
+    "static/css/main.0149349e.chunk.css",
+    "static/js/main.1ed4955b.chunk.js"
   ]
 }
