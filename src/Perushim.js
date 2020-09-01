@@ -15,6 +15,7 @@ class Perushim extends React.Component {
                 {this.props.perushim.map(function(perush,index){
                         let line = perush['he'].toString();
                         line = line.replace(/<(.+?)>/g,"");
+                        if(line.trim().length < 3) return null;
                         let flag = false;
                         let thisCommentary = "";
                         for (let i=0; i<commentary.length; i++){
