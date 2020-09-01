@@ -126,7 +126,7 @@ class TopLevel extends React.Component {
                          />
                 </div>);
           }
-        return null;
+        return null; 
     }
 }
 
