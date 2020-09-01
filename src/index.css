@@ -86,13 +86,15 @@ code {
 /* Beginning Pasukim Form fields */
 
 .formTable {
-  margin:5%;
-  margin-top:5%;
+  margin:1%;
+  /* margin-top:1%; */
+  margin-bottom: 0%;
+  margin-left:3%;
   border:none;
   color:white;
   background-color: maroon;
-  border:4px solid black;
-  padding:8px;
+  /* border:4px solid black; */
+  padding:4px;
   float:left;
 }
 
@@ -108,7 +110,14 @@ code {
     top:25%;
     left:2%;
     width:98%;
-    /* border:5px solid red; */
+    border:5px solid red;
+}
+
+.PerushSideTable {
+    /* width:100%;
+    height:100%; */
+    /* border:7px solid blue;
+    background-color: pink; */
 }
 
 .heChapter {
@@ -116,7 +125,7 @@ code {
   margin:2%;
   margin-top:0%;
   background-color: tan;
-  width: 100%;
+  width: 45%;
   align:right;
   vertical-align: top;
   float:right;
@@ -135,18 +144,20 @@ code {
   font-size: 1.3em;
   list-style: none;
   margin:5%;
-  color:red;
+  color:maroon;
   font-family:ShlomoSemiStam;
 }
 
 /* perush side */
 .PerushHe {
   text-align: right;
-  font-size: 1em;
+  font-size: .8em;
   list-style: none;
-  margin:15%;
+  margin:10%;
+  margin-top: 0;
   color:black;
   font-family:sans-serif;
+  vertical-align: top;
 }
 
 .PerushSideTable {
@@ -169,12 +180,23 @@ code {
 .PerushName {
   list-style: none;
   text-align: left;
-  width:92%;
+  /* width:92%; */
   color:maroon;
   font-weight: bold;
   text-decoration-style:solid;
   text-decoration-line:underline;
   margin-bottom: 2px;
+  display: inline-block;
+  float:left;
+  vertical-align: top;
+}
+
+.PerushNotes {
+    margin:0%;
+    padding:0%;
+    float:left;
+    display:none;
+    vertical-align: top;
 }
 
 .PerushNote {
@@ -206,23 +228,25 @@ code {
 }
 
 .CommentaryList {
-  list-style: none;
-  display:inline;
-  float:left;
+  /* display:inline-block; */
+  width:43%;
+  /* float:left; */
+  /* min-width: 30%; */
 }
 
 .Commentary {
   list-style: none;
-  /* border:2px solid tan; */
-  width:90%;
+  border:2px solid tan;
+  /* width:90%; */
   margin:1%;
   margin-left:0px;
   font-size:1.4em;
   color:maroon;
   padding:1%;
-  padding-left:0%;
+  /* padding-left:0%; */
   text-align: right;
   float:left;
+  /* display: inline; */
 }
 
 .Sefer {

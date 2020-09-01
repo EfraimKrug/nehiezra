@@ -7,7 +7,7 @@ class PerushNotes extends React.Component {
     render()
     {
         // console.log(this.props.perushNotes);
-        return (<div className="PerushNote" >
+        return (<div className="PerushNotes" >
                 {this.props.perushNotes.map(function(perush,index){
                         return (<div className="PerushNote" key={index}><PerushAuthor author={perush.author} sefer={perush.othersefer}/><PerushNote perushnote={perush.note}/></div>)})}
                 </div>);

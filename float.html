@@ -1,0 +1,85 @@
+<html>
+<head>
+  <style>
+    .cont {
+      position:absolute;
+      top:25px;;
+      left:25px;
+      width:100%;
+      height:2000%;
+      background-color:black;
+      color:white;
+    }
+
+    .left {
+      width:20%;
+      background-color: blue;
+      font-variant: small-caps;
+      display:inline-block;
+      padding:2%;
+      margin:10%;
+      float:left;
+      vertical-align: top;
+    }
+
+    .right {
+      background-color: green;
+      width:75%;
+      float:right;
+      padding:3%;
+      border:3px solid black;
+    }
+  </style>
+</head>
+<body>
+  <div class=cont>
+    uh.oh.
+  <div class=right>
+  <ul>
+    </li><li>
+    # You Don't Know JS: *this* & Object Prototypes</li><li>
+    # Chapter 2: `this` All Makes Sense Now!</li><li>
+</li><li>
+    In Chapter 1, we discarded various misconceptions about `this` and learned instead that `this` is a binding made for each function invocation, based entirely on its **call-site** (how the function is called).</li><li>
+</li><li>
+    ## Call-site</li><li>
+    <div class=left>
+      The left side of the equation. Something left. Left behind. Left lying around. Sad. Unwanted.
+    </div>
+</li><li>
+    To understand `this` binding, we have to understand the call-site: the location in code where a function is called (**not where it's declared**). We must inspect the call-site to answer the question: what's *this* `this` a reference to?</li><li>
+</li><li>
+    Finding the call-site is generally: "go locate where a function is called from", but it's not always that easy, as certain coding patterns can obscure the *true* call-site.</li><li>
+</li><li>
+    What's important is to think about the **call-stack** (the stack of functions that have been called to get us to the current moment in execution). The call-site we care about is *in* the invocation *before* the currently executing function.</li><li>
+</li><li>
+    Let's demonstrate call-stack and call-site:</li><li>
+</li><li>
+    You must inspect the call-site and determine which of 4 rules applies. We will first explain each of these 4 rules independently, and then we will illustrate their order of precedence, if multiple rules *could* apply to the call-site.</li><li>
+</li><li>
+    ### Default Binding</li><li>
+</li><li>
+    The first rule we will examine comes from the most common case of function calls: standalone function invocation. Think of *this* `this` rule as the default catch-all rule when none of the other rules apply.</li><li>
+</li><li>
+    Consider this code:</li><li>
+</li><li>
+    The first thing to note, if you were not already aware, is that variables declared in the global scope, as `var a = 2` is, are synonymous with global-object properties of the same name. They're not copies of each other, they *are* each other. Think of it as two sides of the same coin.</li><li>
+</li><li>
+    Secondly, we see that when `foo()` is called, `this.a` resolves to our global variable `a`. Why? Because in this case, the *default binding* for `this` applies to the function call, and so points `this` at the global object.</li><li>
+</li><li>
+    How do we know that the *default binding* rule applies here? We examine the call-site to see how `foo()` is called. In our snippet, `foo()` is called with a plain, un-decorated function reference. None of the other rules we will demonstrate will apply here, so the *default binding* applies instead.</li><li>
+</li><li>
+    If `strict mode` is in effect, the global object is not eligible for the *default binding*, so the `this` is instead set to `undefined`.</li><li>
+</li><li>
+    3. Called with a context object owning the call? Use that context object.</li><li>
+</li><li>
+    4. Default: `undefined` in `strict mode`, global object otherwise.</li><li>
+</li><li>
+    Be careful of accidental/unintentional invoking of the *default binding* rule. In cases where you want to "safely" ignore a `this` binding, a "DMZ" object like `ø = Object.create(null)` is a good placeholder value that protects the `global` object from unintended side-effects.</li><li>
+</li><li>
+    Instead of the four standard binding rules, ES6 arrow-functions use lexical scoping for `this` binding, which means they adopt the `this` binding (whatever it is) from its enclosing function call. They are essentially a syntactic replacement of `self = this` in pre-ES6 coding.</li>
+</ul>
+</div>
+</div>
+</body>
+</html>

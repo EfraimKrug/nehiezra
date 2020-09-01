@@ -40,7 +40,7 @@ class PesukimForm extends React.Component {
 
     render(){
         return (
-          <form onSubmit={this.handleSubmit}>
+          <form onSubmit={this.handleSubmit} className="formTable">
           <table className="formTable">
           <tbody>
           <tr><td>Sefer</td>

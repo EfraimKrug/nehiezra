@@ -33,7 +33,7 @@ class PesukimPage extends React.Component {
       // console.log([firstVerse,lastVerse]);
       return (
           <div className="PasukPage">
-            <div className="PerushSideTable">
+                    <PesukimMikra pesukim={this.props.pesukim.slice(firstVerse,lastVerse)} verse={this.props.verse} firstVerse={firstVerse}/>
                     <PesukimForm
                           handleSeferChange={this.props.handleSeferChange}
                           handleChapterChange={this.props.handleChapterChange}
@@ -48,10 +48,6 @@ class PesukimPage extends React.Component {
                       />
                     <PerushNotes perushNotes={this.props.perushNotes} />
                     <Perushim perushim={this.props.perushim} />
-                <div className="PesukimSideTable">
-                    <PesukimMikra pesukim={this.props.pesukim} verse={this.props.verse}/>
-                </div>
-            </div>
           </div>
         )
       }

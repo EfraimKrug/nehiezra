@@ -13,7 +13,6 @@ class Perushim extends React.Component {
                 {this.props.perushim.map(function(perush,index){
                         let line = perush['he'].toString();
                         line = line.replace(/<(.+?)>/g,"");
-                        if(line.length < 3) return null;
                         let flag = false;
                         let thisCommentary = "";
                         for (let i=0; i<commentary.length; i++){
@@ -25,7 +24,7 @@ class Perushim extends React.Component {
                         if(flag){
                           let holdCommentary = lastCommentary;
                           lastCommentary = thisCommentary;
-                          return (<li className="Commentary" key={index}><PerushName perushname={thisCommentary} lastperushname={holdCommentary}/><span className="PerushHe">{line.trim().substring(0,line.length-1)}</span></li>)
+                          return (<li className="Commentary" key={index}><PerushName perushname={thisCommentary} lastperushname={holdCommentary}/><br/><span className="PerushHe">{line.trim().substring(0,line.length-1)}</span></li>)
                         }
                         else return null
                         })}
