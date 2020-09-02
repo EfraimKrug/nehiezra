@@ -1,6 +1,3 @@
-import React from 'react';
-import Article from './Article.js';
-
 import pdfFile001 from './pdf/Nehemia_Polen_Absence_Makes_the_Presence.pdf';
 import pdfFile002 from './pdf/Nehemia_Polen_A_Derashah_of_Rabbi_Joseph.pdf';
 import pdfFile003 from './pdf/Nehemia_Polen_A_Mystical_Light_A_Review.pdf';
@@ -147,55 +144,3 @@ var pdfFileList =
 {imp:pdfFile070,fname:'Nehemia_Polen_Tu_Bishvat_Nurturing_the_T.pdf'},
 {imp:pdfFile071,fname:'Nehemia_Polen_Turning_Darkness_into_Ligh.pdf'},
 {imp:pdfFile072,fname:'Nehemia_Polen_Where_Heaven_and_Earth_Tou.pdf'}];
-
-class ArticlesPage extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {submitted: false, pdfTitle: pdfFile028};
-    this.handleSubmit = this.handleSubmit.bind(this);
-    this.handleTitleChange = this.handleTitleChange.bind(this);
-  }
-
-  handleSubmit(event) {
-    if(event)event.preventDefault();
-    this.setState({
-      submitted: true
-    });
-    // this.props.loadPesukim();
-  }
-
-  handleTitleChange(event) {
-    if(event)event.preventDefault();
-    this.setState({
-      pdfTitle: event.target.value
-    });
-  }
-
-  render(){
-      return (<div>
-              <form onSubmit={this.handleSubmit} className="pdfFormTable">
-              <table className="pdfFormTable">
-              <tbody>
-              <tr><td></td>
-              <td><select defaultValue={pdfFile028} onChange={this.handleTitleChange}>
-                    { pdfFileList.map(function(listing){
-                            return (
-                                <option value={listing.imp}>
-                                      {listing.fname.replace(/\.pdf/,"").replace(/Nehemia_Polen/,"").replace(/_/g," ")}
-                                </option>
-                              )}
-                              )
-                      }
-                  </select>
-              </td>
-              </tr>
-              </tbody>
-              </table>
-              </form>
-          <Article namePDF={this.state.pdfTitle} />
-          </div>
-        )
-      }
-}
-
-export default ArticlesPage;
