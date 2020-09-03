@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f8fe2b87b427f6b11656f5b0e64e0690",
+    "revision": "1b13e2b20b65c92b4106367939b48265",
     "url": "/nehiezra/index.html"
   },
   {
-    "revision": "8835959c7c549655b50e",
-    "url": "/nehiezra/static/css/main.8d354514.chunk.css"
+    "revision": "8b8b654d959022e2b614",
+    "url": "/nehiezra/static/css/main.6598909d.chunk.css"
   },
   {
     "revision": "e769efdf319379d65515",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/nehiezra/static/js/2.aa748d34.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8835959c7c549655b50e",
+    "revision": "8b8b654d959022e2b614",
     "url": "/nehiezra/static/js/main.554bfada.chunk.js"
   },
   {

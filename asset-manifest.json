@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/nehiezra/static/css/main.8d354514.chunk.css",
+    "main.css": "/nehiezra/static/css/main.6598909d.chunk.css",
     "main.js": "/nehiezra/static/js/main.554bfada.chunk.js",
     "main.js.map": "/nehiezra/static/js/main.554bfada.chunk.js.map",
     "runtime-main.js": "/nehiezra/static/js/runtime-main.a398892f.js",
@@ -8,9 +8,9 @@
     "static/js/2.aa748d34.chunk.js": "/nehiezra/static/js/2.aa748d34.chunk.js",
     "static/js/2.aa748d34.chunk.js.map": "/nehiezra/static/js/2.aa748d34.chunk.js.map",
     "index.html": "/nehiezra/index.html",
-    "precache-manifest.5f06770c70f64c5f36f0daedb3b8c441.js": "/nehiezra/precache-manifest.5f06770c70f64c5f36f0daedb3b8c441.js",
+    "precache-manifest.c1716812d2cb85524dd9f808ba8cd341.js": "/nehiezra/precache-manifest.c1716812d2cb85524dd9f808ba8cd341.js",
     "service-worker.js": "/nehiezra/service-worker.js",
-    "static/css/main.8d354514.chunk.css.map": "/nehiezra/static/css/main.8d354514.chunk.css.map",
+    "static/css/main.6598909d.chunk.css.map": "/nehiezra/static/css/main.6598909d.chunk.css.map",
     "static/js/2.aa748d34.chunk.js.LICENSE.txt": "/nehiezra/static/js/2.aa748d34.chunk.js.LICENSE.txt",
     "static/media/BeRonYahad.jpeg": "/nehiezra/static/media/BeRonYahad.ab4de693.jpeg",
     "static/media/LogoKorenComingSoon.jpg": "/nehiezra/static/media/LogoKorenComingSoon.3bd259c3.jpg",
@@ -95,7 +95,7 @@
   "entrypoints": [
     "static/js/runtime-main.a398892f.js",
     "static/js/2.aa748d34.chunk.js",
-    "static/css/main.8d354514.chunk.css",
+    "static/css/main.6598909d.chunk.css",
     "static/js/main.554bfada.chunk.js"
   ]
 }
