@@ -196,6 +196,21 @@ code {
   /* border:2px solid red; */
 }
 
+.BlueWord {
+  color:blue;
+}
+
+.RedWord {
+  color:red;
+}
+
+.GreenWord {
+  color:green;
+}
+
+.CircledWord {
+  text-decoration:overline;
+}
 
 .PerushNotes {
     width:96%;

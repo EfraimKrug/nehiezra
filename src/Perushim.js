@@ -11,7 +11,7 @@ class Perushim extends React.Component {
         // console.log(this.props.perushim);
         let lastCommentary = "";
         return (<div className="bigger">
-                <PesukimMikra pesukim={this.props.pesukim} verse={this.props.verse} firstVerse={this.props.firstVerse}/>
+                <PesukimMikra pesukim={this.props.pesukim} verse={this.props.verse} firstVerse={this.props.firstVerse} perushNotes={this.props.perushNotes}/>
                 {this.props.perushim.map(function(perush,index){
                         let line = perush['he'].toString();
                         line = line.replace(/<(.+?)>/g,"");

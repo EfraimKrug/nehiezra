@@ -49,6 +49,7 @@ class PesukimPage extends React.Component {
                               pesukim={this.props.pesukim.slice(firstVerse,lastVerse)}
                               verse={this.props.verse}
                               firstVerse={firstVerse}
+                              perushNotes={this.props.perushNotes}
                     />
           </div>
         )
