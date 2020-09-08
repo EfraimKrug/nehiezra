@@ -202,6 +202,11 @@ code {
   color:blue;
 }
 
+.BlackWord {
+  color:grey;
+  /* text-shadow: 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black;  */
+}
+
 .RedWord {
   color:red;
 }
@@ -212,6 +217,7 @@ code {
 
 .CircledWord {
   text-decoration:overline;
+  background-color: #eeeeb3;
 }
 
 .PerushNotes {
@@ -233,6 +239,17 @@ code {
     font-style:italic;
     text-align: left;
     /* width:96%; */
+}
+
+.PerushNoteHighLight{
+  margin:2%;
+  margin-top:0px;
+  margin-bottom:0px;
+  padding:1%;
+  color:blue;
+  font-size:1.2em;
+  font-style:italic;
+  text-align: left;
 }
 
 .Author {

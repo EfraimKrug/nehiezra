@@ -12,7 +12,7 @@ function analyzePerush(perush){
   var highlightArray = [];
   var mark = "";
   var type = "";
-  var types = ["Circled","Green","Red","Blue"];
+  var types = ["Circled","Green","Red","Blue", "Black"];
       for(var i=0; i<types.length;i++){
         if(perush.indexOf(types[i]) > -1){
           let mark = perush.indexOf(types[i]);
