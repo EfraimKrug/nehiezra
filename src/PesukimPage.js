@@ -1,7 +1,6 @@
 import React from 'react';
 import PesukimForm from './PesukimForm.js';
 import Perushim from './Perushim.js';
-import PerushNotes from './PerushNotes.js';
 
 class PesukimPage extends React.Component {
   constructor(props) {
@@ -44,7 +43,6 @@ class PesukimPage extends React.Component {
                           chapter={this.props.chapter}
                           verse={this.props.verse}
                       />
-                    <PerushNotes perushNotes={this.props.perushNotes} />
                     <Perushim perushim={this.props.perushim}
                               pesukim={this.props.pesukim.slice(firstVerse,lastVerse)}
                               verse={this.props.verse}

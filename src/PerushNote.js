@@ -9,9 +9,9 @@ function trimNote(note){
 class PerushNote extends React.Component {
     render()
     {
-        return (<div className="PerushNote">
+        return (<p className="PerushNote">
                 {trimNote(this.props.perushnote)}
-                </div>);
+                </p>);
     }
 }
 
