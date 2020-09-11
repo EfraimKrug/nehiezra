@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/nehiezra/static/css/main.a1ef3c7f.chunk.css",
-    "main.js": "/nehiezra/static/js/main.ebfc3c86.chunk.js",
-    "main.js.map": "/nehiezra/static/js/main.ebfc3c86.chunk.js.map",
+    "main.js": "/nehiezra/static/js/main.7f03a197.chunk.js",
+    "main.js.map": "/nehiezra/static/js/main.7f03a197.chunk.js.map",
     "runtime-main.js": "/nehiezra/static/js/runtime-main.a398892f.js",
     "runtime-main.js.map": "/nehiezra/static/js/runtime-main.a398892f.js.map",
     "static/js/2.39b65339.chunk.js": "/nehiezra/static/js/2.39b65339.chunk.js",
     "static/js/2.39b65339.chunk.js.map": "/nehiezra/static/js/2.39b65339.chunk.js.map",
     "index.html": "/nehiezra/index.html",
-    "precache-manifest.f06598e783440217ab3879f373140827.js": "/nehiezra/precache-manifest.f06598e783440217ab3879f373140827.js",
+    "precache-manifest.7bfd27a92bd7a4c4df56cb41837d5168.js": "/nehiezra/precache-manifest.7bfd27a92bd7a4c4df56cb41837d5168.js",
     "service-worker.js": "/nehiezra/service-worker.js",
     "static/css/main.a1ef3c7f.chunk.css.map": "/nehiezra/static/css/main.a1ef3c7f.chunk.css.map",
     "static/js/2.39b65339.chunk.js.LICENSE.txt": "/nehiezra/static/js/2.39b65339.chunk.js.LICENSE.txt",
@@ -96,6 +96,6 @@
     "static/js/runtime-main.a398892f.js",
     "static/js/2.39b65339.chunk.js",
     "static/css/main.a1ef3c7f.chunk.css",
-    "static/js/main.ebfc3c86.chunk.js"
+    "static/js/main.7f03a197.chunk.js"
   ]
 }
