@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/nehiezra/static/css/main.848e2e82.chunk.css",
-    "main.js": "/nehiezra/static/js/main.ea0d58f5.chunk.js",
-    "main.js.map": "/nehiezra/static/js/main.ea0d58f5.chunk.js.map",
+    "main.css": "/nehiezra/static/css/main.a1ef3c7f.chunk.css",
+    "main.js": "/nehiezra/static/js/main.ebfc3c86.chunk.js",
+    "main.js.map": "/nehiezra/static/js/main.ebfc3c86.chunk.js.map",
     "runtime-main.js": "/nehiezra/static/js/runtime-main.a398892f.js",
     "runtime-main.js.map": "/nehiezra/static/js/runtime-main.a398892f.js.map",
-    "static/js/2.aa748d34.chunk.js": "/nehiezra/static/js/2.aa748d34.chunk.js",
-    "static/js/2.aa748d34.chunk.js.map": "/nehiezra/static/js/2.aa748d34.chunk.js.map",
+    "static/js/2.39b65339.chunk.js": "/nehiezra/static/js/2.39b65339.chunk.js",
+    "static/js/2.39b65339.chunk.js.map": "/nehiezra/static/js/2.39b65339.chunk.js.map",
     "index.html": "/nehiezra/index.html",
-    "precache-manifest.d5cd906a80fc00205ad04d8ad0852411.js": "/nehiezra/precache-manifest.d5cd906a80fc00205ad04d8ad0852411.js",
+    "precache-manifest.f06598e783440217ab3879f373140827.js": "/nehiezra/precache-manifest.f06598e783440217ab3879f373140827.js",
     "service-worker.js": "/nehiezra/service-worker.js",
-    "static/css/main.848e2e82.chunk.css.map": "/nehiezra/static/css/main.848e2e82.chunk.css.map",
-    "static/js/2.aa748d34.chunk.js.LICENSE.txt": "/nehiezra/static/js/2.aa748d34.chunk.js.LICENSE.txt",
+    "static/css/main.a1ef3c7f.chunk.css.map": "/nehiezra/static/css/main.a1ef3c7f.chunk.css.map",
+    "static/js/2.39b65339.chunk.js.LICENSE.txt": "/nehiezra/static/js/2.39b65339.chunk.js.LICENSE.txt",
     "static/media/BeRonYahad.jpeg": "/nehiezra/static/media/BeRonYahad.ab4de693.jpeg",
     "static/media/LogoKorenComingSoon.jpg": "/nehiezra/static/media/LogoKorenComingSoon.3bd259c3.jpg",
     "static/media/Nehemia_Polen_A_Derashah_of_Rabbi_Joseph.pdf": "/nehiezra/static/media/Nehemia_Polen_A_Derashah_of_Rabbi_Joseph.1ed6f613.pdf",
@@ -94,8 +94,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.a398892f.js",
-    "static/js/2.aa748d34.chunk.js",
-    "static/css/main.848e2e82.chunk.css",
-    "static/js/main.ea0d58f5.chunk.js"
+    "static/js/2.39b65339.chunk.js",
+    "static/css/main.a1ef3c7f.chunk.css",
+    "static/js/main.ebfc3c86.chunk.js"
   ]
 }
