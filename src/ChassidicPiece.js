@@ -10,12 +10,12 @@ class ChassidicPiece extends React.Component {
   render(){
             // console.log(this.props.piece);
             let piece = this.props.piece;
-            let offset = 0;
+            let offset = -1;
             return (
               <div>
                 {
                   this.props.text.map(function(torah,index){
-                    if(torah.length < 4){
+                    if(torah.length < 20){
                       offset++;
                       return null;
                     }
