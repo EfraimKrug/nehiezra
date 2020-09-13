@@ -14,7 +14,7 @@ http.createServer(function(request, response){
 	response.writeHead(200, {"Content-Type":"text/plain"});
 	request.on("data", function(chunk){
 		ch = JSON.parse(chunk.toString());
-		var line = '\n\t{"Sefat_Emet,_' + ch.sefer.trim() + ',_' + ch.parsha.trim() + '.' + ch.chapter.trim() + ':' + ch.verse.trim() + '":[true,"' + ch.note.trim() + '"]},';
+		var line = '\n\t{"Sefat_Emet,' + ch.sefer.trim() + ',' + ch.parsha.trim() + '.' + ch.section.trim() + ':' + ch.torah.trim() + '":[true,"' + ch.note.trim() + '"]},';
 		fs.appendFile("sefat_emet_gather.js", line, function(err){
 			if(err) console.log("Write Error: ", err);
 		});
