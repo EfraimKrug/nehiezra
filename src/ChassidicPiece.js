@@ -1,5 +1,7 @@
 import React from 'react';
+import sefat_emet_np from './js/sefat_emet_np.js';
 import NPChassidus from './NPChassidus.js';
+import NPCassidusDropBox from './NPCassidusDropBox.js';
 
 class ChassidicPiece extends React.Component {
   constructor(props) {
@@ -20,7 +22,8 @@ class ChassidicPiece extends React.Component {
                       return null;
                     }
                     return <div key={index} className="ChassidusBox">
-                            <NPChassidus piece={piece} index={index-offset} torah={torah}/>
+                            <NPCassidusDropBox  sefat_emet_np={sefat_emet_np}/>
+                            <NPChassidus piece={piece} index={index-offset} torah={torah} sefat_emet_np={sefat_emet_np}/>
                            </div>
                   })
                 }

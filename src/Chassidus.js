@@ -16,8 +16,6 @@ class Chassidus extends React.Component {
         return response.json();
       }));
     }).then(function (data) {
-      // console.log("Loading... Baby")
-      // console.log( data );
       standIn.setState({
         booksLoaded: true,
         books: data[0]

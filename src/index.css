@@ -94,17 +94,24 @@ code {
 
 /* Beginning Pasukim Form fields */
 
-.formTable {
+.formTable, formTableNP{
   margin:1%;
-  /* margin-top:1%; */
   margin-bottom: 0%;
   margin-left:3%;
   border:none;
   color:white;
   background-color: maroon;
-  /* border:4px solid black; */
   padding:4px;
   float:left;
+}
+
+.formTableNP {
+  border: 3px solid maroon;
+  background-color: tan;
+  margin:0px;
+  margin-top:0px;
+  font-size: 1.2em;
+  border-radius: 10px;
 }
 
 .formInput{
@@ -113,6 +120,14 @@ code {
   background-color: maroon;
 }
 
+.oRegular {
+  color:blue;
+}
+
+.oHighlight {
+  color:red;
+  font-style: italic;
+}
 /* pesukim */
 .PasukPage {
     position: absolute;

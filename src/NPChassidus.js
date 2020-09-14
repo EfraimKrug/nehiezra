@@ -1,5 +1,5 @@
 import React from 'react';
-import sefat_emet_np from './js/sefat_emet_np.js';
+//import sefat_emet_np from './js/sefat_emet_np.js';
 
 class NPChassidus extends React.Component {
 
@@ -7,11 +7,11 @@ class NPChassidus extends React.Component {
           let p = this.props.piece + ":" + this.props.index;
           let cName = "Chassidus";
           let NPNote = "";
-          for(let i=0; i < sefat_emet_np.sefat_emet_np.length; i++){
-            if(sefat_emet_np.sefat_emet_np[i].hasOwnProperty(p)){
-              if(sefat_emet_np.sefat_emet_np[i][p][0]){
+          for(let i=0; i < this.props.sefat_emet_np.sefat_emet_np.length; i++){
+            if(this.props.sefat_emet_np.sefat_emet_np[i].hasOwnProperty(p)){
+              if(this.props.sefat_emet_np.sefat_emet_np[i][p][0]){
                   cName = "ChassidusHL";
-                  NPNote = sefat_emet_np.sefat_emet_np[i][p][1];
+                  NPNote = this.props.sefat_emet_np.sefat_emet_np[i][p][1];
                 }
               break;
             }
