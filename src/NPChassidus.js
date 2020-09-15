@@ -2,16 +2,27 @@ import React from 'react';
 //import sefat_emet_np from './js/sefat_emet_np.js';
 
 class NPChassidus extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {sefat_emet_np:this.props.sefat_emet_np,
+                          piece:this.props.piece,
+                          index:this.props.index,
+                          torah:this.props.torah};
+  }
 
   render(){
           let p = this.props.piece + ":" + this.props.index;
+          // console.log(this.props.index);
           let cName = "Chassidus";
           let NPNote = "";
-          for(let i=0; i < this.props.sefat_emet_np.sefat_emet_np.length; i++){
-            if(this.props.sefat_emet_np.sefat_emet_np[i].hasOwnProperty(p)){
-              if(this.props.sefat_emet_np.sefat_emet_np[i][p][0]){
+          for(let i=0; i < this.state.sefat_emet_np.sefat_emet_np.length; i++){
+            // console.log(p);
+            // console.log(this.state.sefat_emet_np.sefat_emet_np[i]);
+            if(this.state.sefat_emet_np.sefat_emet_np[i].hasOwnProperty(p)){
+              // console.log("and ...")
+              if(this.state.sefat_emet_np.sefat_emet_np[i][p][0]){
                   cName = "ChassidusHL";
-                  NPNote = this.props.sefat_emet_np.sefat_emet_np[i][p][1];
+                  NPNote = this.state.sefat_emet_np.sefat_emet_np[i][p][1];
                 }
               break;
             }
@@ -23,13 +34,13 @@ class NPChassidus extends React.Component {
                       <div className="NPChassidus">
                         {NPNote}
                       </div>
-                        {this.props.torah}
+                        {this.state.torah}
                     </div>
                   );
 
             return (
                     <div className={cName}>
-                        {this.props.torah}
+                        {this.state.torah}
                     </div>
                   )
         }

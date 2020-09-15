@@ -177,7 +177,7 @@ class ArticlesPage extends React.Component {
               <table className="pdfFormTable">
               <tbody>
               <tr><td></td>
-              <td><select defaultValue={pdfFile028} onChange={this.handleTitleChange}>
+              <td><select defaultValue={pdfFile028} onChange={this.handleTitleChange} className="formTableNP">
                     { pdfFileList.map(function(listing){
                             return (
                                 <option value={listing.imp}>

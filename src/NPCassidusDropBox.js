@@ -4,37 +4,76 @@ import React from 'react';
 class NPCassidusDropBox extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {books:""};
+    this.state = {search:null};
+    this.searchSpace = this.searchSpace.bind(this);
+    this.newTorah = this.newTorah.bind(this);
   }
 
+  newTorah(event){
+    this.props.newTorah(event.target.value.substring(0,event.target.value.lastIndexOf(":")));
+  }
+
+  searchSpace(event){
+      let keyword = event.target.value;
+      this.setState({search:keyword})
+  }
 
   render(){
-    console.log(this.props.sefat_emet_np);
-    let cName = "oRegular";
+            let cName = "oRegular";
+            let keyword = this.state.search;
+            // alert(keyword);
+            const dropBoxAll = this.props.sefat_emet_np.sefat_emet_np.map(function(elt, index){
+              let val = Object.keys(elt)[0].split(",");
+              let comment = elt[Object.keys(elt)[0]][1];
 
-    const dropBoxAll = this.props.sefat_emet_np.sefat_emet_np.map(function(elt){
-      let val = Object.keys(elt)[0].split(",");
-      return <option value={Object.keys(elt)[0]} className={cName}>{val[2].replace("."," ").replace("_","")}</option>
-    });
+              if(!keyword){
+                  return <option  key={index} value={Object.keys(elt)[0]}
+                                  className={cName}>{val[2].replace("."," ").replaceAll("_"," ")}
+                                  </option>
+              }
+              if(Object.keys(elt)[0].toLowerCase().includes(keyword.toLowerCase()) || comment.toLowerCase().includes(keyword.toLowerCase())){
+                  return <option  key={index} value={Object.keys(elt)[0]}
+                                  className={cName}>{val[2].replace("."," ").replaceAll("_"," ")}
+                                  </option>
+              }
+              return null;
+            });
 
-    const dropBox = this.props.sefat_emet_np.sefat_emet_np.map(function(elt){
-      let val = Object.keys(elt)[0].split(",");
-      if(elt[Object.keys(elt)[0]][1].length > 5)
-        return <option value={Object.keys(elt)[0]} className={cName}>{val[2].replace("."," ").replace("_","")}</option>
-      return null;
-    });
+            const dropBox = this.props.sefat_emet_np.sefat_emet_np.map(function(elt,index){
+              let val = Object.keys(elt)[0].split(",");
+              let comment = elt[Object.keys(elt)[0]][1];
+
+              if(elt[Object.keys(elt)[0]][1].length < 5) return null;
+
+              if(!keyword){
+                  return <option  key={index} value={Object.keys(elt)[0]}
+                                  className={cName}>{val[2].replace("."," ").replaceAll("_"," ")}
+                                  </option>
+              }
+              if(Object.keys(elt)[0].toLowerCase().includes(keyword.toLowerCase()) || comment.toLowerCase().includes(keyword.toLowerCase())){
+                  return <option  key={index} value={Object.keys(elt)[0]}
+                                  className={cName}>{val[2].replace("."," ").replaceAll("_"," ")}
+                                  </option>
+              }
+              return null;
+            });
+
             return (
-              <div>
-                <input className="formTableNP" type="text" placeholder="filter the dropbox"/>
-                <br/>Suggested by Reb Nehemia...<br/>
-                <select className="formTableNP">
+              <table className="formTableNP"><tr>
+                <td cols="2"><input className="formTableNPTop" type="text" placeholder="filter the dropbox" onChange={this.searchSpace}/></td>
+                </tr><tr>
+                <td className="formTableNPLabel"> Suggested </td>
+                <td><select className="formTableNP" onChange={this.newTorah}>
                   {dropBoxAll}
                 </select>
-                <br/>Comments from Reb Nehemia...
-                <br/><select className="formTableNP">
+                </td></tr>
+                <tr>
+                <td className="formTableNPLabel"> Commented </td>
+                <td><select className="formTableNP" onChange={this.newTorah}>
                   {dropBox}
                 </select>
-              </div>
+                </td></tr>
+              </table>
             )
         }
 }

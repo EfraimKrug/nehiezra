@@ -1,17 +1,20 @@
 import React from 'react';
-import sefat_emet_np from './js/sefat_emet_np.js';
 import NPChassidus from './NPChassidus.js';
-import NPCassidusDropBox from './NPCassidusDropBox.js';
 
 class ChassidicPiece extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {books:""};
+    this.state = {books:"",
+                  piece:props.piece,
+                  sefat_emet_np:this.props.sefat_emet_np
+                };
   }
 
   render(){
-            // console.log(this.props.piece);
+            // console.log("ChassidicPiece");
             let piece = this.props.piece;
+            // console.log(piece);
+            let sefat_emet_np = this.props.sefat_emet_np;
             let offset = -1;
             return (
               <div>
@@ -21,9 +24,12 @@ class ChassidicPiece extends React.Component {
                       offset++;
                       return null;
                     }
+
                     return <div key={index} className="ChassidusBox">
-                            <NPCassidusDropBox  sefat_emet_np={sefat_emet_np}/>
-                            <NPChassidus piece={piece} index={index-offset} torah={torah} sefat_emet_np={sefat_emet_np}/>
+                            <NPChassidus  piece={piece}
+                                          index={index-offset}
+                                          torah={torah}
+                                          sefat_emet_np={sefat_emet_np}/>
                            </div>
                   })
                 }

@@ -24,6 +24,36 @@ class ChassidusPage extends React.Component {
     this.handleSefer = this.handleSefer.bind(this);
     this.handleParsha = this.handleParsha.bind(this);
     this.handlePiece = this.handlePiece.bind(this);
+    this.newTorah = this.newTorah.bind(this);
+  }
+
+  newTorah(val){
+    let citeValues = val.split(",");
+    let parsha = citeValues[2].substring(0,citeValues[2].indexOf("."));
+
+    var seferI = 0;
+    for(let i=0; i < sefat_emet.sefat_emet.length; i++){
+      if(sefat_emet.sefat_emet[i].sefer == citeValues[1]){
+        seferI = i;
+        break;
+      }
+    }
+
+    let sefer = sefat_emet.sefat_emet[seferI];
+    // console.log(sefer);
+    var parshaI = 0;
+    for(let i=0; i < sefer.parshalist.length; i++){
+      if(sefer.parshalist[i].parsha == parsha){
+        parshaI = i;
+        break;
+      }
+    }
+
+    this.setState({
+      sefer:sefer,
+      parsha:sefer.parshalist[parshaI],
+      apicall:val
+    });
   }
 
   handleSubmit(event) {
@@ -70,6 +100,7 @@ class ChassidusPage extends React.Component {
   }
 
   handlePiece(event) {
+    // console.log(this.state);
     var idx = 0;
     if(event)event.preventDefault();
     this.setState({
@@ -81,12 +112,12 @@ class ChassidusPage extends React.Component {
   render(){
       return (
           <div><div className="ChassidusTitle">Sefat Emet: The Gerrer Rebbe</div>
-            <form onSubmit={this.handleSubmit} className="formTable">
+            <form onSubmit={this.handleSubmit}>
             <table className="formTable">
             <tbody>
-            <tr><td>Sefer</td></tr>
+            <tr><td>Go Direct</td></tr>
             <tr><td><select tabIndex='0' onChange={this.handleSefer}>
-            <option>Choose</option>
+            <option>Sefer</option>
                 {
                   sefat_emet.sefat_emet.map(function(sefer,index){
                     return(<option key={index} value={sefer.sefer}>{sefer.sefer.replace("_","")}</option>)
@@ -97,19 +128,22 @@ class ChassidusPage extends React.Component {
                 </tr>
                 <tr>
                 <td><select tabIndex='1' onChange={this.handleParsha}>
-                    <option>Choose</option>
+                    <option>Parsha</option>
                     <EltParsha data={this.state.sefer}/>
                     </select>
                 </td>
                 </tr>
                 <tr>
-                <td><select tabIndex='2' onChange={this.handlePiece}><option>Choose</option><EltPiece data={this.state.parsha}/></select>
+                <td><select tabIndex='2' onChange={this.handlePiece}>
+                    <option>Section</option>
+                    <EltPiece data={this.state.parsha}/>
+                    </select>
                 </td>
                 </tr>
                 </tbody>
                 </table>
                 </form>
-              <Chassidus piece={this.state.apicall}/>
+              <Chassidus piece={this.state.apicall} newTorah={this.newTorah}/>
           </div>
         )
       }
