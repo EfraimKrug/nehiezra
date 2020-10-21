@@ -249,6 +249,11 @@ code {
   background-color: #eeeeb3;
 }
 
+.UnderlinedWord {
+  text-decoration:underline;
+  background-color: #eeeeb3;
+}
+
 .PerushNotes {
     width:96%;
     /* margin:0%;
